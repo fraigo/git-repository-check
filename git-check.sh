@@ -14,9 +14,9 @@ do
 		if [ -e .git ]; then
 			RES=$(git status | grep "	")
 			if [ ! "$RES" == "" ]; then
-				echo "**** $f : for commit **********"
-				echo "-------------------------------"
+				message "**** $f : for commit **********"
 				echo "$RES"
+				echo "-------------------------------"
 				echo "Commit message [Empty to cancel]: "
 				read COMMIT_MESSAGE
 				if [ ! "$COMMIT_MESSAGE" == "" ]; then
@@ -27,10 +27,10 @@ do
 			fi
 			RES1=$(git status | grep "Your branch is ahead")
 			if [ ! "$RES1" == "" ]; then
-				echo "**** $f : for push   **********"
+				message "**** $f : for push   **********"
 				echo "$RES1"
 				echo "-------------------------------"
-				echo "Push to origin [ Empry to cancel ] ? : "
+				echo "Push to origin [ Empty to cancel ] ? :"
 				read PUSH_ORIGIN
 				if [ ! "$PUSH_ORIGIN" == "" ]; then
 					git push origin $PUSH_ORIGIN
