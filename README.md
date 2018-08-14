@@ -34,11 +34,11 @@ Commit message [Empty to cancel]:
 
 ### Quick push
 
-If some repository has commits to **push**, it will ask to the push origin. Leave empty (press enter) to continue without commit.
+If some repository has commits to **push**, it will ask to the push origin. Leave empty (press enter) to continue without push. Otherwise, put the current origin to push (Example: `master`, `my-branch-name`)
 
 ```
 **** project-quick-start : for push   **********
 Your branch is ahead of 'origin/master' by 1 commit.
 -------------------------------
-Push to origin [ (y)es , empty to cancel ] ? :
+Push to origin [ Empty to cancel ] ? :
 ```
