@@ -40,5 +40,5 @@ If some repository has commits to **push**, it will ask to the push origin. Leav
 **** project-quick-start : for push   **********
 Your branch is ahead of 'origin/master' by 1 commit.
 -------------------------------
-Push to origin [ Empry to cancel ] ? :
+Push to origin [ (y)es , empty to cancel ] ? :
 ```
