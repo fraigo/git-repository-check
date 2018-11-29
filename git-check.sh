@@ -4,7 +4,7 @@ message () {
   echo -e "\033[0;32m$1\033[0m"
 }
 
-DIR=$(find ./ -maxdepth 1 -type d -printf "%f ")
+DIR=$(find . -maxdepth 1 -type d | grep -o -E [A-Za-z0-9].+)
 CURR=$(pwd)
 
 FETCH=$(echo "$1 $2 $3" | grep "\-fetch")
